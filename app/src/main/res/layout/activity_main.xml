@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.naruto.appportfolio.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_app_title"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/view_padding_all"
+        android:text="@string/tv_app_title"/>
+
+    <LinearLayout
+        style="@style/Custom_Linearlayout">
+
+        <Button
+            android:id="@+id/bt_app_movies"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorAccent"
+            android:onClick="jumpToApplication"
+            android:padding="@dimen/view_padding_all"
+            android:text="@string/bt_app_movies"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Custom_Linearlayout">
+
+        <Button
+            android:id="@+id/bt_app_stock"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorAccent"
+            android:onClick="jumpToApplication"
+            android:padding="@dimen/view_padding_all"
+            android:text="@string/bt_app_stock"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Custom_Linearlayout">
+
+        <Button
+            android:id="@+id/bt_app_reader"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorAccent"
+            android:onClick="jumpToApplication"
+            android:padding="@dimen/view_padding_all"
+            android:text="@string/bt_app_reader"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Custom_Linearlayout">
+
+        <Button
+            android:id="@+id/bt_app_news"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorAccent"
+            android:onClick="jumpToApplication"
+            android:padding="@dimen/view_padding_all"
+            android:text="@string/bt_app_news"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Custom_Linearlayout">
+
+        <Button
+            android:id="@+id/bt_app_graduation"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorAccent"
+            android:onClick="jumpToApplication"
+            android:padding="@dimen/view_padding_all"
+            android:text="@string/bt_app_graduation"/>
+    </LinearLayout>
+
+</LinearLayout>

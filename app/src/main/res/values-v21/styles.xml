@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="CustomLightBlue" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <item name="colorAccent">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="Custom_Linearlayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:layout_marginTop">@dimen/view_margin_top</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
