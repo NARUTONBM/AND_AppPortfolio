@@ -3,6 +3,7 @@ package com.naruto.appportfolio;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,35 +15,9 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void jumpToApplication(View view) {
-		switch (view.getId()) {
-		case R.id.bt_app_movies:
-			showToast(getString(R.string.bt_app_movies));
-
-			break;
-
-		case R.id.bt_app_stock:
-			showToast(getString(R.string.bt_app_stock));
-
-			break;
-
-		case R.id.bt_app_reader:
-			showToast(getString(R.string.bt_app_reader));
-
-			break;
-
-		case R.id.bt_app_news:
-			showToast(getString(R.string.bt_app_news));
-
-			break;
-
-		case R.id.bt_app_graduation:
-			showToast(getString(R.string.bt_app_graduation));
-
-			break;
-
-		default:
-			break;
-		}
+		Button button = (Button) view;
+		String appName = button.getText().toString();
+		showToast(appName);
 	}
 
 	private void showToast(String appName) {
